@@ -1,5 +1,0 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - {name: ansible-role-atom-packages, atom_packages_packages: ["minimap"]}
