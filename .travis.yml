@@ -28,8 +28,5 @@ install:
   - sudo touch /etc/ansible/hosts
   - "echo -e '[local]\nlocalhost ansible_connection=local' | sudo tee -a /etc/ansible/hosts > /dev/null"
 
-  # Install dependency roles.
-  - ansible-galaxy install -r tests/requirements.yml -p ./roles
-
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
