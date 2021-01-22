@@ -1,3 +1,4 @@
 ---
-- apm: name={{ item }} state=latest
+- name: install apm package
+  apm: name={{ item }} state=latest
   with_items: "{{ atom_packages_packages }}"
